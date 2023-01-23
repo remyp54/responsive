@@ -1,5 +1,9 @@
+/* Apparence générale début*/
+
 * {
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -8,13 +12,9 @@ body {
 }
 
 header {
-	background-color: yellowgreen;
+	background-color: lightgoldenrodyellow;
 	padding-bottom: 50px;
 	padding-top: 50px;
-}
-
-main {
-	margin-top: 100px;
 }
 
 li {
@@ -35,3 +35,39 @@ a:hover {
 	font-size: 20px;
 	color: black;
 }
+
+main {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+section {
+	border: 1px solid black;
+}
+
+footer {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 150px;
+	background-color: yellowgreen;
+}
+
+/* Apparence générale fin */
+/*----------------------------------------------------------*/
+/* Responsive début */
+
+@media screen and (min-width: 640px) {
+	.container {
+		flex-wrap: wrap;
+	}
+}
+
+@media print and (min-width: 800px) {
+	header {
+		display: none;
+	}
+}
+
+/* Responsive fin */
