@@ -1,20 +1,19 @@
+/* Apparence générale début */
+
 * {
-	margin: auto;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	text-align: center;
-	font-family: arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 header {
-	background-color: yellowgreen;
+	background-color: lightskyblue;
 	padding-bottom: 50px;
 	padding-top: 50px;
-}
-
-main {
-	margin-top: 100px;
 }
 
 li {
@@ -35,3 +34,24 @@ a:hover {
 	font-size: 20px;
 	color: black;
 }
+
+main {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+section {
+	border: 1px solid black;
+}
+
+footer {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 150px;
+	background-color: lightskyblue;
+}
+
+/* Apparence générale fin */
+/* ------------------------------------------- */
