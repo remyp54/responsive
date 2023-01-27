@@ -2,7 +2,6 @@
 
 * {
 	margin: 0;
-	padding: 0;
 }
 
 body {
@@ -37,12 +36,6 @@ a:hover {
 
 main {
 	margin-top: 100px;
-	display: flex;
-	flex-direction: row;
-}
-
-section {
-	border: 1px solid black;
 }
 
 footer {
@@ -53,5 +46,29 @@ footer {
 	background-color: lightskyblue;
 }
 
+
 /* Apparence générale fin */
 /* ------------------------------------------- */
+/* Body deébut */
+
+.separation {
+	margin-bottom: 15px;
+	border-top: 1px solid black;
+}
+
+/* Body fin */
+/* ------------------------------------------- */
+/* Responsive début */
+
+@media (min-width: 376px) {
+	.meteo1, .meteo2 {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.separation {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
