@@ -1,32 +1,137 @@
+/* Apparence générale début */
 * {
 	margin: auto;
+	padding: auto;
+	box-sizing: border-box;
 }
 
 body {
-	text-align: center;
-	font-family: arial, sans-serif;
+	font-family: Trebuchet MS, sans-serif;
 }
 
 header {
-	background-color: yellowgreen;
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-top: 25px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Lobster', cursive, sans-serif;
+	font-size: 3em;
+	margin-bottom: 50px;
+}
+
+ul {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: impact, sans-serif;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	margin: 20px;
+	text-align: center;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #7451eb;
 }
 
 main {
 	margin-top: 100px;
 }
 
-li {
-	list-style-type: none;
-	font-size: 25px;
+p {
+	font-size: 1.2em;
 }
 
-a {
-	color: black;
+footer {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 150px;
+}
+
+.pieddepage {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Apparence généarle fin */
+/* -----------------------------------------------------*/
+/* Page "Accueil" début */
+
+#stellartfilms {
+	color: darkolivegreen;
 	text-decoration: none;
 }
 
-a:hover {
-	color: yellowgreen;
+#stellartfilms:hover {
+	color: #7451eb;
 }
+
+#quisuisje {
+	width: 1300px;
+}
+
+#moi {
+	width: 400px;
+	height: 490px;
+	float: left;
+	margin-right: 50px;
+}
+
+#presentation {
+	text-align: justify;
+}
+
+/* Page "Accueil" fin */
+/* -----------------------------------------------------*/
+/* Page "Book" début */
+
+.modele {
+	width: 300px;
+	height: 449px;
+}
+
+#modele {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1300px;
+}
+
+/* Page "Book" fin */
+/* -----------------------------------------------------*/
+/* Page "Photos de tournages" début */
+
+.tournage {
+	width: 700px;
+	height: 465px;
+}
+
+#tournages {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1450px;
+}
+
+/* Page "Photos de tournages" fin */
+/* -----------------------------------------------------*/
+/* Page "Contact" début */
+
+.contact {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+	grid-column: 2fr 1fr;
+	grid-row: 3fr 1fr;
+}
+
+/* Page "Contact" fin */
