@@ -46,10 +46,9 @@ footer {
 	background-color: lightskyblue;
 }
 
-
 /* Apparence générale fin */
 /* ------------------------------------------- */
-/* Body deébut */
+/* Body début */
 
 .separation {
 	margin-bottom: 15px;
@@ -60,15 +59,21 @@ footer {
 /* ------------------------------------------- */
 /* Responsive début */
 
-@media (min-width: 376px) {
-	.meteo1, .meteo2 {
+@media screen and (min-width: 821px) {
+	#meteo {
 		float: left;
+		margin-left: 25px;
+	}
+
+	#meteo2 {
+		display: inline-block;
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 	.separation {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		display: none;
 	}
 }
+
+/* Responsive fin */
